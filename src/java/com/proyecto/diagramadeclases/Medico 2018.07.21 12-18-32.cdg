@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Medico">
+  <ClassDiagramComponents>
+    <Class name="Antecedentemedico" package="com.proyecto.entidades" visibility="public" xPosition="688.0" yPosition="164.0">
+      <Fields>
+        <Field name="antecedentemedicoid" type="Integer" visibility="private"/>
+        <Field name="nombreantecedente" type="String" visibility="private"/>
+        <Field name="descripcion" type="String" visibility="private"/>
+        <Field name="antecedentemedicofichamedicaCollection" type="Collection&lt;Antecedentemedicofichamedica&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="antecedentemedicoid"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getAntecedentemedicoid" returnType="Integer" visibility="public"/>
+        <Method name="setAntecedentemedicoid" returnType="void" visibility="public">
+          <Argument type="Integer" name="antecedentemedicoid"/>
+        </Method>
+        <Method name="getNombreantecedente" returnType="String" visibility="public"/>
+        <Method name="setNombreantecedente" returnType="void" visibility="public">
+          <Argument type="String" name="nombreantecedente"/>
+        </Method>
+        <Method name="getDescripcion" returnType="String" visibility="public"/>
+        <Method name="setDescripcion" returnType="void" visibility="public">
+          <Argument type="String" name="descripcion"/>
+        </Method>
+        <Method name="getAntecedentemedicofichamedicaCollection" returnType="Collection&lt;Antecedentemedicofichamedica&gt;" visibility="public"/>
+        <Method name="setAntecedentemedicofichamedicaCollection" returnType="void" visibility="public">
+          <Argument type="Collection&lt;Antecedentemedicofichamedica&gt;" name="antecedentemedicofichamedicaCollection"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Antecedentemedicofichamedica" package="com.proyecto.entidades" visibility="public" xPosition="811.0" yPosition="481.0">
+      <Fields>
+        <Field name="antecedentefichamedica" type="Integer" visibility="private"/>
+        <Field name="antecedentemedicoid" type="Antecedentemedico" visibility="private"/>
+        <Field name="fichamedica" type="Fichamedica" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="antecedentefichamedica"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getAntecedentefichamedica" returnType="Integer" visibility="public"/>
+        <Method name="setAntecedentefichamedica" returnType="void" visibility="public">
+          <Argument type="Integer" name="antecedentefichamedica"/>
+        </Method>
+        <Method name="getAntecedentemedicoid" returnType="Antecedentemedico" visibility="public"/>
+        <Method name="setAntecedentemedicoid" returnType="void" visibility="public">
+          <Argument type="Antecedentemedico" name="antecedentemedicoid"/>
+        </Method>
+        <Method name="getFichamedica" returnType="Fichamedica" visibility="public"/>
+        <Method name="setFichamedica" returnType="void" visibility="public">
+          <Argument type="Fichamedica" name="fichamedica"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Consultamedica" package="com.proyecto.entidades" visibility="public" xPosition="406.0" yPosition="720.0">
+      <Fields>
+        <Field name="consultaid" type="Integer" visibility="private"/>
+        <Field name="fechaconsulta" type="Date" visibility="private"/>
+        <Field name="motivoconsultamedicaCollection" type="Collection&lt;Motivoconsultamedica&gt;" visibility="private"/>
+        <Field name="doctorid" type="Doctores" visibility="private"/>
+        <Field name="tratamientoid" type="Tratamientos" visibility="private"/>
+        <Field name="historiaclinicaCollection" type="Collection&lt;Historiaclinica&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="consultaid"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getConsultaid" returnType="Integer" visibility="public"/>
+        <Method name="setConsultaid" returnType="void" visibility="public">
+          <Argument type="Integer" name="consultaid"/>
+        </Method>
+        <Method name="getFechaconsulta" returnType="Date" visibility="public"/>
+        <Method name="setFechaconsulta" returnType="void" visibility="public">
+          <Argument type="Date" name="fechaconsulta"/>
+        </Method>
+        <Method name="getMotivoconsultamedicaCollection" returnType="Collection&lt;Motivoconsultamedica&gt;" visibility="public"/>
+        <Method name="setMotivoconsultamedicaCollection" returnType="void" visibility="public">
+          <Argument type="Collection&lt;Motivoconsultamedica&gt;" name="motivoconsultamedicaCollection"/>
+        </Method>
+        <Method name="getDoctorid" returnType="Doctores" visibility="public"/>
+        <Method name="setDoctorid" returnType="void" visibility="public">
+          <Argument type="Doctores" name="doctorid"/>
+        </Method>
+        <Method name="getTratamientoid" returnType="Tratamientos" visibility="public"/>
+        <Method name="setTratamientoid" returnType="void" visibility="public">
+          <Argument type="Tratamientos" name="tratamientoid"/>
+        </Method>
+        <Method name="getHistoriaclinicaCollection" returnType="Collection&lt;Historiaclinica&gt;" visibility="public"/>
+        <Method name="setHistoriaclinicaCollection" returnType="void" visibility="public">
+          <Argument type="Collection&lt;Historiaclinica&gt;" name="historiaclinicaCollection"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Consultoriomedico" package="com.proyecto.entidades" visibility="public" xPosition="1386.0" yPosition="1207.0">
+      <Fields>
+        <Field name="consultorioid" type="Integer" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="direccion" type="String" visibility="private"/>
+        <Field name="telefono" type="String" visibility="private"/>
+        <Field name="correo" type="String" visibility="private"/>
+        <Field name="fichamedicaCollection" type="Collection&lt;Fichamedica&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="consultorioid"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getConsultorioid" returnType="Integer" visibility="public"/>
+        <Method name="setConsultorioid" returnType="void" visibility="public">
+          <Argument type="Integer" name="consultorioid"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getDireccion" returnType="String" visibility="public"/>
+        <Method name="setDireccion" returnType="void" visibility="public">
+          <Argument type="String" name="direccion"/>
+        </Method>
+        <Method name="getTelefono" returnType="String" visibility="public"/>
+        <Method name="setTelefono" returnType="void" visibility="public">
+          <Argument type="String" name="telefono"/>
+        </Method>
+        <Method name="getCorreo" returnType="String" visibility="public"/>
+        <Method name="setCorreo" returnType="void" visibility="public">
+          <Argument type="String" name="correo"/>
+        </Method>
+        <Method name="getFichamedicaCollection" returnType="Collection&lt;Fichamedica&gt;" visibility="public"/>
+        <Method name="setFichamedicaCollection" returnType="void" visibility="public">
+          <Argument type="Collection&lt;Fichamedica&gt;" name="fichamedicaCollection"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Doctores" package="com.proyecto.entidades" visibility="public" xPosition="245.0" yPosition="394.0">
+      <Fields>
+        <Field name="doctorid" type="Integer" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+        <Field name="correo" type="String" visibility="private"/>
+        <Field name="direccion" type="String" visibility="private"/>
+        <Field name="cedula" type="String" visibility="private"/>
+        <Field name="especialidad" type="String" visibility="private"/>
+        <Field name="aniosexperiencia" type="Integer" visibility="private"/>
+        <Field name="sexo" type="String" visibility="private"/>
+        <Field name="consultamedicaCollection" type="Collection&lt;Consultamedica&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="doctorid"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDoctorid" returnType="Integer" visibility="public"/>
+        <Method name="setDoctorid" returnType="void" visibility="public">
+          <Argument type="Integer" name="doctorid"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="getCorreo" returnType="String" visibility="public"/>
+        <Method name="setCorreo" returnType="void" visibility="public">
+          <Argument type="String" name="correo"/>
+        </Method>
+        <Method name="getDireccion" returnType="String" visibility="public"/>
+        <Method name="setDireccion" returnType="void" visibility="public">
+          <Argument type="String" name="direccion"/>
+        </Method>
+        <Method name="getCedula" returnType="String" visibility="public"/>
+        <Method name="setCedula" returnType="void" visibility="public">
+          <Argument type="String" name="cedula"/>
+        </Method>
+        <Method name="getEspecialidad" returnType="String" visibility="public"/>
+        <Method name="setEspecialidad" returnType="void" visibility="public">
+          <Argument type="String" name="especialidad"/>
+        </Method>
+        <Method name="getAniosexperiencia" returnType="Integer" visibility="public"/>
+        <Method name="setAniosexperiencia" returnType="void" visibility="public">
+          <Argument type="Integer" name="aniosexperiencia"/>
+        </Method>
+        <Method name="getSexo" returnType="String" visibility="public"/>
+        <Method name="setSexo" returnType="void" visibility="public">
+          <Argument type="String" name="sexo"/>
+        </Method>
+        <Method name="getConsultamedicaCollection" returnType="Collection&lt;Consultamedica&gt;" visibility="public"/>
+        <Method name="setConsultamedicaCollection" returnType="void" visibility="public">
+          <Argument type="Collection&lt;Consultamedica&gt;" name="consultamedicaCollection"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Fichamedica" package="com.proyecto.entidades" visibility="public" xPosition="997.0" yPosition="889.0">
+      <Fields>
+        <Field name="fichamedica" type="Integer" visibility="private"/>
+        <Field name="fecharegistro" type="Date" visibility="private"/>
+        <Field name="costo" type="BigInteger" visibility="private"/>
+        <Field name="abono" type="BigInteger" visibility="private"/>
+        <Field name="total" type="BigInteger" visibility="private"/>
+        <Field name="antecedentemedicofichamedicaCollection" type="Collection&lt;Antecedentemedicofichamedica&gt;" visibility="private"/>
+        <Field name="historiaclinicaCollection" type="Collection&lt;Historiaclinica&gt;" visibility="private"/>
+        <Field name="centromedicoid" type="Consultoriomedico" visibility="private"/>
+        <Field name="pacienteid" type="Pacientes" visibility="private"/>
+        <Field name="signosvitales" type="Signosvitales" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="fichamedica"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getFichamedica" returnType="Integer" visibility="public"/>
+        <Method name="setFichamedica" returnType="void" visibility="public">
+          <Argument type="Integer" name="fichamedica"/>
+        </Method>
+        <Method name="getFecharegistro" returnType="Date" visibility="public"/>
+        <Method name="setFecharegistro" returnType="void" visibility="public">
+          <Argument type="Date" name="fecharegistro"/>
+        </Method>
+        <Method name="getCosto" returnType="BigInteger" visibility="public"/>
+        <Method name="setCosto" returnType="void" visibility="public">
+          <Argument type="BigInteger" name="costo"/>
+        </Method>
+        <Method name="getAbono" returnType="BigInteger" visibility="public"/>
+        <Method name="setAbono" returnType="void" visibility="public">
+          <Argument type="BigInteger" name="abono"/>
+        </Method>
+        <Method name="getTotal" returnType="BigInteger" visibility="public"/>
+        <Method name="setTotal" returnType="void" visibility="public">
+          <Argument type="BigInteger" name="total"/>
+        </Method>
+        <Method name="getAntecedentemedicofichamedicaCollection" returnType="Collection&lt;Antecedentemedicofichamedica&gt;" visibility="public"/>
+        <Method name="setAntecedentemedicofichamedicaCollection" returnType="void" visibility="public">
+          <Argument type="Collection&lt;Antecedentemedicofichamedica&gt;" name="antecedentemedicofichamedicaCollection"/>
+        </Method>
+        <Method name="getHistoriaclinicaCollection" returnType="Collection&lt;Historiaclinica&gt;" visibility="public"/>
+        <Method name="setHistoriaclinicaCollection" returnType="void" visibility="public">
+          <Argument type="Collection&lt;Historiaclinica&gt;" name="historiaclinicaCollection"/>
+        </Method>
+        <Method name="getCentromedicoid" returnType="Consultoriomedico" visibility="public"/>
+        <Method name="setCentromedicoid" returnType="void" visibility="public">
+          <Argument type="Consultoriomedico" name="centromedicoid"/>
+        </Method>
+        <Method name="getPacienteid" returnType="Pacientes" visibility="public"/>
+        <Method name="setPacienteid" returnType="void" visibility="public">
+          <Argument type="Pacientes" name="pacienteid"/>
+        </Method>
+        <Method name="getSignosvitales" returnType="Signosvitales" visibility="public"/>
+        <Method name="setSignosvitales" returnType="void" visibility="public">
+          <Argument type="Signosvitales" name="signosvitales"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Historiaclinica" package="com.proyecto.entidades" visibility="public" xPosition="689.0" yPosition="969.0">
+      <Fields>
+        <Field name="historiaid" type="Integer" visibility="private"/>
+        <Field name="fechainicio" type="Date" visibility="private"/>
+        <Field name="fechafinal" type="Date" visibility="private"/>
+        <Field name="consultaid" type="Consultamedica" visibility="private"/>
+        <Field name="fichamedica" type="Fichamedica" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="historiaid"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getHistoriaid" returnType="Integer" visibility="public"/>
+        <Method name="setHistoriaid" returnType="void" visibility="public">
+          <Argument type="Integer" name="historiaid"/>
+        </Method>
+        <Method name="getFechainicio" returnType="Date" visibility="public"/>
+        <Method name="setFechainicio" returnType="void" visibility="public">
+          <Argument type="Date" name="fechainicio"/>
+        </Method>
+        <Method name="getFechafinal" returnType="Date" visibility="public"/>
+        <Method name="setFechafinal" returnType="void" visibility="public">
+          <Argument type="Date" name="fechafinal"/>
+        </Method>
+        <Method name="getConsultaid" returnType="Consultamedica" visibility="public"/>
+        <Method name="setConsultaid" returnType="void" visibility="public">
+          <Argument type="Consultamedica" name="consultaid"/>
+        </Method>
+        <Method name="getFichamedica" returnType="Fichamedica" visibility="public"/>
+        <Method name="setFichamedica" returnType="void" visibility="public">
+          <Argument type="Fichamedica" name="fichamedica"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Medicamentos" package="com.proyecto.entidades" visibility="public" xPosition="1680.0" yPosition="984.0">
+      <Fields>
+        <Field name="medicamentoid" type="Integer" visibility="private"/>
+        <Field name="nombremedicina" type="String" visibility="private"/>
+        <Field name="descripcion" type="String" visibility="private"/>
+        <Field name="medicamentostratamientosCollection" type="Collection&lt;Medicamentostratamientos&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="medicamentoid"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getMedicamentoid" returnType="Integer" visibility="public"/>
+        <Method name="setMedicamentoid" returnType="void" visibility="public">
+          <Argument type="Integer" name="medicamentoid"/>
+        </Method>
+        <Method name="getNombremedicina" returnType="String" visibility="public"/>
+        <Method name="setNombremedicina" returnType="void" visibility="public">
+          <Argument type="String" name="nombremedicina"/>
+        </Method>
+        <Method name="getDescripcion" returnType="String" visibility="public"/>
+        <Method name="setDescripcion" returnType="void" visibility="public">
+          <Argument type="String" name="descripcion"/>
+        </Method>
+        <Method name="getMedicamentostratamientosCollection" returnType="Collection&lt;Medicamentostratamientos&gt;" visibility="public"/>
+        <Method name="setMedicamentostratamientosCollection" returnType="void" visibility="public">
+          <Argument type="Collection&lt;Medicamentostratamientos&gt;" name="medicamentostratamientosCollection"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Medicamentostratamientos" package="com.proyecto.entidades" visibility="public" xPosition="1832.0" yPosition="611.0">
+      <Fields>
+        <Field name="medicinaTratamiento" type="Integer" visibility="private"/>
+        <Field name="medicamentoid" type="Medicamentos" visibility="private"/>
+        <Field name="tratamientoid" type="Tratamientos" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="medicinaTratamiento"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getMedicinaTratamiento" returnType="Integer" visibility="public"/>
+        <Method name="setMedicinaTratamiento" returnType="void" visibility="public">
+          <Argument type="Integer" name="medicinaTratamiento"/>
+        </Method>
+        <Method name="getMedicamentoid" returnType="Medicamentos" visibility="public"/>
+        <Method name="setMedicamentoid" returnType="void" visibility="public">
+          <Argument type="Medicamentos" name="medicamentoid"/>
+        </Method>
+        <Method name="getTratamientoid" returnType="Tratamientos" visibility="public"/>
+        <Method name="setTratamientoid" returnType="void" visibility="public">
+          <Argument type="Tratamientos" name="tratamientoid"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Motivo" package="com.proyecto.entidades" visibility="public" xPosition="311.0" yPosition="1351.0">
+      <Fields>
+        <Field name="motivoid" type="Integer" visibility="private"/>
+        <Field name="descripcion" type="String" visibility="private"/>
+        <Field name="motivoconsultamedicaCollection" type="Collection&lt;Motivoconsultamedica&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="motivoid"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getMotivoid" returnType="Integer" visibility="public"/>
+        <Method name="setMotivoid" returnType="void" visibility="public">
+          <Argument type="Integer" name="motivoid"/>
+        </Method>
+        <Method name="getDescripcion" returnType="String" visibility="public"/>
+        <Method name="setDescripcion" returnType="void" visibility="public">
+          <Argument type="String" name="descripcion"/>
+        </Method>
+        <Method name="getMotivoconsultamedicaCollection" returnType="Collection&lt;Motivoconsultamedica&gt;" visibility="public"/>
+        <Method name="setMotivoconsultamedicaCollection" returnType="void" visibility="public">
+          <Argument type="Collection&lt;Motivoconsultamedica&gt;" name="motivoconsultamedicaCollection"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Motivoconsultamedica" package="com.proyecto.entidades" visibility="public" xPosition="418.0" yPosition="984.0">
+      <Fields>
+        <Field name="motivoConsulta" type="Integer" visibility="private"/>
+        <Field name="consultaid" type="Consultamedica" visibility="private"/>
+        <Field name="motivoid" type="Motivo" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="motivoConsulta"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getMotivoConsulta" returnType="Integer" visibility="public"/>
+        <Method name="setMotivoConsulta" returnType="void" visibility="public">
+          <Argument type="Integer" name="motivoConsulta"/>
+        </Method>
+        <Method name="getConsultaid" returnType="Consultamedica" visibility="public"/>
+        <Method name="setConsultaid" returnType="void" visibility="public">
+          <Argument type="Consultamedica" name="consultaid"/>
+        </Method>
+        <Method name="getMotivoid" returnType="Motivo" visibility="public"/>
+        <Method name="setMotivoid" returnType="void" visibility="public">
+          <Argument type="Motivo" name="motivoid"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Pacientes" package="com.proyecto.entidades" visibility="public" xPosition="873.0" yPosition="1561.0">
+      <Fields>
+        <Field name="pacienteid" type="Integer" visibility="private"/>
+        <Field name="cedula" type="String" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="telefono" type="String" visibility="private"/>
+        <Field name="fechanacimiento" type="Date" visibility="private"/>
+        <Field name="estadocivil" type="String" visibility="private"/>
+        <Field name="direccion" type="String" visibility="private"/>
+        <Field name="ocupacion" type="String" visibility="private"/>
+        <Field name="sexo" type="String" visibility="private"/>
+        <Field name="correo" type="String" visibility="private"/>
+        <Field name="fichamedicaCollection" type="Collection&lt;Fichamedica&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="pacienteid"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPacienteid" returnType="Integer" visibility="public"/>
+        <Method name="setPacienteid" returnType="void" visibility="public">
+          <Argument type="Integer" name="pacienteid"/>
+        </Method>
+        <Method name="getCedula" returnType="String" visibility="public"/>
+        <Method name="setCedula" returnType="void" visibility="public">
+          <Argument type="String" name="cedula"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getTelefono" returnType="String" visibility="public"/>
+        <Method name="setTelefono" returnType="void" visibility="public">
+          <Argument type="String" name="telefono"/>
+        </Method>
+        <Method name="getFechanacimiento" returnType="Date" visibility="public"/>
+        <Method name="setFechanacimiento" returnType="void" visibility="public">
+          <Argument type="Date" name="fechanacimiento"/>
+        </Method>
+        <Method name="getEstadocivil" returnType="String" visibility="public"/>
+        <Method name="setEstadocivil" returnType="void" visibility="public">
+          <Argument type="String" name="estadocivil"/>
+        </Method>
+        <Method name="getDireccion" returnType="String" visibility="public"/>
+        <Method name="setDireccion" returnType="void" visibility="public">
+          <Argument type="String" name="direccion"/>
+        </Method>
+        <Method name="getOcupacion" returnType="String" visibility="public"/>
+        <Method name="setOcupacion" returnType="void" visibility="public">
+          <Argument type="String" name="ocupacion"/>
+        </Method>
+        <Method name="getSexo" returnType="String" visibility="public"/>
+        <Method name="setSexo" returnType="void" visibility="public">
+          <Argument type="String" name="sexo"/>
+        </Method>
+        <Method name="getCorreo" returnType="String" visibility="public"/>
+        <Method name="setCorreo" returnType="void" visibility="public">
+          <Argument type="String" name="correo"/>
+        </Method>
+        <Method name="getFichamedicaCollection" returnType="Collection&lt;Fichamedica&gt;" visibility="public"/>
+        <Method name="setFichamedicaCollection" returnType="void" visibility="public">
+          <Argument type="Collection&lt;Fichamedica&gt;" name="fichamedicaCollection"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Signosvitales" package="com.proyecto.entidades" visibility="public" xPosition="1205.0" yPosition="1544.0">
+      <Fields>
+        <Field name="signosvitales" type="Integer" visibility="private"/>
+        <Field name="masacorporal" type="String" visibility="private"/>
+        <Field name="talla" type="String" visibility="private"/>
+        <Field name="peso" type="String" visibility="private"/>
+        <Field name="temperatura" type="String" visibility="private"/>
+        <Field name="presion" type="String" visibility="private"/>
+        <Field name="emergencia" type="Boolean" visibility="private"/>
+        <Field name="fichamedicaCollection" type="Collection&lt;Fichamedica&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="signosvitales"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getSignosvitales" returnType="Integer" visibility="public"/>
+        <Method name="setSignosvitales" returnType="void" visibility="public">
+          <Argument type="Integer" name="signosvitales"/>
+        </Method>
+        <Method name="getMasacorporal" returnType="String" visibility="public"/>
+        <Method name="setMasacorporal" returnType="void" visibility="public">
+          <Argument type="String" name="masacorporal"/>
+        </Method>
+        <Method name="getTalla" returnType="String" visibility="public"/>
+        <Method name="setTalla" returnType="void" visibility="public">
+          <Argument type="String" name="talla"/>
+        </Method>
+        <Method name="getPeso" returnType="String" visibility="public"/>
+        <Method name="setPeso" returnType="void" visibility="public">
+          <Argument type="String" name="peso"/>
+        </Method>
+        <Method name="getTemperatura" returnType="String" visibility="public"/>
+        <Method name="setTemperatura" returnType="void" visibility="public">
+          <Argument type="String" name="temperatura"/>
+        </Method>
+        <Method name="getPresion" returnType="String" visibility="public"/>
+        <Method name="setPresion" returnType="void" visibility="public">
+          <Argument type="String" name="presion"/>
+        </Method>
+        <Method name="getEmergencia" returnType="Boolean" visibility="public"/>
+        <Method name="setEmergencia" returnType="void" visibility="public">
+          <Argument type="Boolean" name="emergencia"/>
+        </Method>
+        <Method name="getFichamedicaCollection" returnType="Collection&lt;Fichamedica&gt;" visibility="public"/>
+        <Method name="setFichamedicaCollection" returnType="void" visibility="public">
+          <Argument type="Collection&lt;Fichamedica&gt;" name="fichamedicaCollection"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Tratamientos" package="com.proyecto.entidades" visibility="public" xPosition="1131.0" yPosition="481.0">
+      <Fields>
+        <Field name="tratamientoid" type="Integer" visibility="private"/>
+        <Field name="descripcion" type="String" visibility="private"/>
+        <Field name="costo" type="BigInteger" visibility="private"/>
+        <Field name="consultamedicaCollection" type="Collection&lt;Consultamedica&gt;" visibility="private"/>
+        <Field name="medicamentostratamientosCollection" type="Collection&lt;Medicamentostratamientos&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="tratamientoid"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getTratamientoid" returnType="Integer" visibility="public"/>
+        <Method name="setTratamientoid" returnType="void" visibility="public">
+          <Argument type="Integer" name="tratamientoid"/>
+        </Method>
+        <Method name="getDescripcion" returnType="String" visibility="public"/>
+        <Method name="setDescripcion" returnType="void" visibility="public">
+          <Argument type="String" name="descripcion"/>
+        </Method>
+        <Method name="getCosto" returnType="BigInteger" visibility="public"/>
+        <Method name="setCosto" returnType="void" visibility="public">
+          <Argument type="BigInteger" name="costo"/>
+        </Method>
+        <Method name="getConsultamedicaCollection" returnType="Collection&lt;Consultamedica&gt;" visibility="public"/>
+        <Method name="setConsultamedicaCollection" returnType="void" visibility="public">
+          <Argument type="Collection&lt;Consultamedica&gt;" name="consultamedicaCollection"/>
+        </Method>
+        <Method name="getMedicamentostratamientosCollection" returnType="Collection&lt;Medicamentostratamientos&gt;" visibility="public"/>
+        <Method name="setMedicamentostratamientosCollection" returnType="void" visibility="public">
+          <Argument type="Collection&lt;Medicamentostratamientos&gt;" name="medicamentostratamientosCollection"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="com.proyecto.entidades.Fichamedica" target="com.proyecto.entidades.Pacientes" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="antecedentemedicofichamedicaCollection" source="com.proyecto.entidades.Antecedentemedico" target="com.proyecto.entidades.Antecedentemedicofichamedica" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.proyecto.entidades.Historiaclinica" target="com.proyecto.entidades.Consultamedica" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="motivoconsultamedicaCollection" source="com.proyecto.entidades.Consultamedica" target="com.proyecto.entidades.Motivoconsultamedica" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.proyecto.entidades.Antecedentemedicofichamedica" target="com.proyecto.entidades.Fichamedica" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.proyecto.entidades.Antecedentemedico" target="com.proyecto.entidades.Antecedentemedicofichamedica" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="medicamentoid" source="com.proyecto.entidades.Medicamentostratamientos" target="com.proyecto.entidades.Medicamentos" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="motivoconsultamedicaCollection" source="com.proyecto.entidades.Motivo" target="com.proyecto.entidades.Motivoconsultamedica" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.proyecto.entidades.Consultamedica" target="com.proyecto.entidades.Doctores" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.proyecto.entidades.Doctores" target="com.proyecto.entidades.Consultamedica" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="pacienteid" source="com.proyecto.entidades.Fichamedica" target="com.proyecto.entidades.Pacientes" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.proyecto.entidades.Antecedentemedicofichamedica" target="com.proyecto.entidades.Antecedentemedico" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.proyecto.entidades.Historiaclinica" target="com.proyecto.entidades.Fichamedica" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="signosvitales" source="com.proyecto.entidades.Fichamedica" target="com.proyecto.entidades.Signosvitales" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="tratamientoid" source="com.proyecto.entidades.Medicamentostratamientos" target="com.proyecto.entidades.Tratamientos" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.proyecto.entidades.Fichamedica" target="com.proyecto.entidades.Antecedentemedicofichamedica" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="fichamedica" source="com.proyecto.entidades.Antecedentemedicofichamedica" target="com.proyecto.entidades.Fichamedica" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.proyecto.entidades.Consultamedica" target="com.proyecto.entidades.Historiaclinica" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.proyecto.entidades.Motivoconsultamedica" target="com.proyecto.entidades.Motivo" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.proyecto.entidades.Medicamentostratamientos" target="com.proyecto.entidades.Tratamientos" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.proyecto.entidades.Consultoriomedico" target="com.proyecto.entidades.Fichamedica" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="consultaid" source="com.proyecto.entidades.Motivoconsultamedica" target="com.proyecto.entidades.Consultamedica" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.proyecto.entidades.Medicamentos" target="com.proyecto.entidades.Medicamentostratamientos" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.proyecto.entidades.Signosvitales" target="com.proyecto.entidades.Fichamedica" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.proyecto.entidades.Motivo" target="com.proyecto.entidades.Motivoconsultamedica" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="fichamedicaCollection" source="com.proyecto.entidades.Pacientes" target="com.proyecto.entidades.Fichamedica" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.proyecto.entidades.Tratamientos" target="com.proyecto.entidades.Consultamedica" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.proyecto.entidades.Fichamedica" target="com.proyecto.entidades.Consultoriomedico" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="doctorid" source="com.proyecto.entidades.Consultamedica" target="com.proyecto.entidades.Doctores" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="antecedentemedicofichamedicaCollection" source="com.proyecto.entidades.Fichamedica" target="com.proyecto.entidades.Antecedentemedicofichamedica" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.proyecto.entidades.Pacientes" target="com.proyecto.entidades.Fichamedica" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="antecedentemedicoid" source="com.proyecto.entidades.Antecedentemedicofichamedica" target="com.proyecto.entidades.Antecedentemedico" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="consultamedicaCollection" source="com.proyecto.entidades.Doctores" target="com.proyecto.entidades.Consultamedica" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="fichamedica" source="com.proyecto.entidades.Historiaclinica" target="com.proyecto.entidades.Fichamedica" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="medicamentostratamientosCollection" source="com.proyecto.entidades.Tratamientos" target="com.proyecto.entidades.Medicamentostratamientos" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="consultaid" source="com.proyecto.entidades.Historiaclinica" target="com.proyecto.entidades.Consultamedica" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="fichamedicaCollection" source="com.proyecto.entidades.Consultoriomedico" target="com.proyecto.entidades.Fichamedica" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.proyecto.entidades.Motivoconsultamedica" target="com.proyecto.entidades.Consultamedica" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.proyecto.entidades.Consultamedica" target="com.proyecto.entidades.Tratamientos" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="historiaclinicaCollection" source="com.proyecto.entidades.Fichamedica" target="com.proyecto.entidades.Historiaclinica" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="fichamedicaCollection" source="com.proyecto.entidades.Signosvitales" target="com.proyecto.entidades.Fichamedica" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.proyecto.entidades.Medicamentostratamientos" target="com.proyecto.entidades.Medicamentos" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="consultamedicaCollection" source="com.proyecto.entidades.Tratamientos" target="com.proyecto.entidades.Consultamedica" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.proyecto.entidades.Consultamedica" target="com.proyecto.entidades.Motivoconsultamedica" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.proyecto.entidades.Tratamientos" target="com.proyecto.entidades.Medicamentostratamientos" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="tratamientoid" source="com.proyecto.entidades.Consultamedica" target="com.proyecto.entidades.Tratamientos" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="historiaclinicaCollection" source="com.proyecto.entidades.Consultamedica" target="com.proyecto.entidades.Historiaclinica" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.proyecto.entidades.Fichamedica" target="com.proyecto.entidades.Signosvitales" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="motivoid" source="com.proyecto.entidades.Motivoconsultamedica" target="com.proyecto.entidades.Motivo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="centromedicoid" source="com.proyecto.entidades.Fichamedica" target="com.proyecto.entidades.Consultoriomedico" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.proyecto.entidades.Fichamedica" target="com.proyecto.entidades.Historiaclinica" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="medicamentostratamientosCollection" source="com.proyecto.entidades.Medicamentos" target="com.proyecto.entidades.Medicamentostratamientos" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
